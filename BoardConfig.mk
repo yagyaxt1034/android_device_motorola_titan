@@ -19,7 +19,7 @@
 DEVICE_PATH := device/motorola/titan
 
 # Vendor Unification Init
-TARGET_INIT_VENDOR_LIB := libinit_titan
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_titan
 TARGET_RECOVERY_DEVICE_MODULES := libinit_titan
 
 # Assert
