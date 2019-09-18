@@ -60,10 +60,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
 
 void vendor_load_properties()
 {
-    std::string platform = GetProperty("ro.board.platform", "");
-    if (platform != ANDROID_TARGET)
-        return;
-
     std::string radio = GetProperty("ro.boot.radio", "");
 
     property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G 2014");
