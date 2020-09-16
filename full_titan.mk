@@ -27,3 +27,6 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := titan
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_SHIPPING_API_LEVEL := 19
+
+# Mark the device as having low RAM.
+PRODUCT_PROPERTY_OVERRIDES += ro.config.low_ram=true
