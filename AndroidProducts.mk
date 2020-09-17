@@ -15,4 +15,10 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_titan.mk \
-    $(LOCAL_DIR)/lineage_titan.mk
+    $(LOCAL_DIR)/statix_titan.mk
+
+COMMON_LUNCH_CHOICES += \
+    statix_titan-user \
+    statix_titan-userdebug \
+    statix_titan-eng
+
